@@ -2,17 +2,64 @@
   <%- include('head'); %>
 
   <style>
-    main{
-      margin: auto;
+    nav{
+      position: absolute;
+      width: auto;
+      right: 0px;
+      top: 20px;
     }
+    .menu-list-top{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item-menu-list-top{
+      list-style: none;
+    }
+
+    .item-menu-list-top img{
+      width: 40px;
+      transition: .2s linear;
+    }
+
+    .item-menu-list-top img:hover{
+      filter: brightness(150%);
+    }
+
+    .menu-list-top:first-child .input-email{
+      padding: 10px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .menu-list-top:first-child .button-email{
+      padding: 10px;
+      background-color: rgb(252, 96, 39);
+      border: none;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+    }
+
    </style>
 
 <body>
   <nav>
-    <ul>
-      <li><a href=""><img src="" alt=""></a></li>
-      <li><a href=""><img src="" alt=""></a></li>
-      <li><a href=""><img src="" alt=""></a></li>
+    <ul class="menu-list-top">
+      <li class="item-menu-list-top">
+        <input class="input-email" type="text" placeholder="Digite o seu email">
+        <input class="button-email" type="button" value="Enviar">
+      </li>
+      <li class="item-menu-list-top">
+        <a href=""><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/user.png?raw=true" alt=""></a>
+      </li>
+      <li class="item-menu-list-top">
+        <a href=""><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/email.png?raw=true" alt=""></a>
+      </li>
+      <li class="item-menu-list-top">
+        <a href=""><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/settings.png?raw=true" alt=""></a>
+      </li>
     </ul>
   </nav>
 

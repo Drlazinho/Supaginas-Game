@@ -10,17 +10,17 @@
   line-height: 2;
   }
 
-  li{
+  .menu-aside li{
     list-style: none;
     margin-right: 20px;
     transition: .3s linear;
   }
-  li:hover{
+  .menu-aside li:hover{
     transform: scale(1.2);
     text-decoration: underline;
   }
 
-  li img{
+  .menu-aside li img{
     width: 30px;
     margin-right: 20px;
   }
@@ -35,9 +35,12 @@
 </style>
 
 <aside>
-  <img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/logo.png?raw=true" alt="logo do game" width="200px">
+  <a href="\">
+    <img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/logo.png?raw=true" alt="logo do game" width="200px">
 
-  <ul>
+  </a>
+
+  <ul class="menu-aside">
     <li><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/busca.png?raw=true" alt=""><a href="/">Home</a></li>
     <li><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/castelo.png?raw=true" alt=""><a href="/page2">Link2</a></li>
     <li><img src="https://github.com/Drlazinho/Supaginas-Game/blob/master/assets/icons/jogo-rpg.png?raw=true" alt=""><a href="/page3">Link3</a></li>
